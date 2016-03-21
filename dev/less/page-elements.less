@@ -1,0 +1,202 @@
+/*
+** Page Elements Styles
+*/
+
+// Contact
+.contact {
+  textarea {
+    margin-top: 2 * @baseline;
+    margin-bottom: 0;
+  }
+}
+
+// Icon Box
+.icon-box {
+  .icon-wrapper {
+    color: #fff;
+    padding-top: 5px;
+    text-align: center;
+    margin-top: 0;
+    background: none;
+    .easing;
+
+    i {
+      font-size: 3em;
+    }
+  }
+
+  .heading {
+    text-align: center;
+    margin-bottom: @baseline;
+    font-weight: 400;
+  }
+
+  p {
+    text-align: justify;
+  }
+}
+
+// Features
+.feature {
+  .icon {
+    font-size: 3em;
+    color: @color;
+  }
+
+  .media-body {
+    padding-left: 20px;
+  }
+
+  .heading {
+    margin-top: 0;
+  }
+
+  p {
+    text-align: justify;
+  }
+}
+
+// Pricing Table
+.pricing-table {
+  text-align: center;
+
+  .title-wrapper {
+    padding: 15px;
+    background: rgb(100, 171, 141);
+
+    .title {
+      margin: 0;
+      padding: 0;
+      font-weight: 900;
+      color: #fff;
+    }
+  }
+
+  .price-wrapper {
+    background: #f0f0f0;
+    padding: 15px;
+    color: #333;
+
+    .price {
+      margin: 0;
+    }
+  }
+
+  .pricing-table-feature {
+    background: #fff;
+    padding: 15px;
+    color: #777;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .get-it {
+    padding: 15px;
+    background: rgb(100, 171, 141);
+    margin-top: -1px;
+    .easing;
+
+    .get-it-text {
+      color: #fff;
+      margin: 0;
+    }
+  }
+
+  .get-it:hover {
+    background: saturate(@color, 20%);
+  }
+}
+
+.pricing-table.featured .title-wrapper {
+  margin-top: -30px;
+  padding: 30px 15px;
+}
+
+.pricing-table-padding {
+  padding-top: 30px;
+}
+
+// Services
+.service {
+  position: relative;
+  display: block;
+
+  .service-inner {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .service-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+  }
+
+  .service-content-wrapper {
+    display: table;
+    height: 100%;
+    width: 100%;
+  }
+
+  .service-content {
+    display: table-cell;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .service-heading {
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: 300;
+  }
+
+  .service-divider {
+    width: 60px;
+    height: 2px;
+    margin: 1.5 * @baseline auto;
+    background: #64ab8d;
+    opacity: 0.7;
+  }
+
+  p {
+    color: #ccc;
+  }
+
+  .service-number {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    top: -10px;
+    right: -10px;
+    position: absolute;
+    background: #64ab8d;
+    color: #fff;
+    font-weight: 900;
+  }
+}
+
+.service:hover {
+  .service-content-wrapper {
+    opacity: 0;
+  }
+
+  .service-overlay {
+    opacity: 0.5;
+  }
+}
+
+.services-row-padding {
+  padding-top: 2 * @baseline;
+}
+
+// Testimonials
+.testimonial {
+  .rating-wrapper {
+    color: rgb(255, 232, 0);
+    margin-bottom: 1em;
+  }
+}

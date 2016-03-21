@@ -1,0 +1,41 @@
+/*
+**
+** Linea Fonts Import
+**
+*/
+
+@import url( "../fonts/linea/_arrows/_ICONFONT/styles.css" );
+@import url( "../fonts/linea/_basic/_ICONFONT/styles.css" );
+@import url( "../fonts/linea/_basic_elaboration/_ICONFONT/styles.css" );
+@import url( "../fonts/linea/_ecommerce/_ICONFONT/styles.css" );
+@import url( "../fonts/linea/_music/_ICONFONT/styles.css" );
+@import url( "../fonts/linea/_software/_ICONFONT/styles.css" );
+@import url( "../fonts/linea/_weather/_ICONFONT/styles.css" );
+
+.icon-arrows:before {
+  font-family: "linea-arrows-10" !important
+}
+
+.icon-basic:before {
+  font-family: "linea-basic-10" !important
+}
+
+.icon-basic-elaboration:before {
+  font-family: "linea-basic-elaboration-10" !important
+}
+
+.icon-ecommerce:before {
+  font-family: "linea-ecommerce-10" !important
+}
+
+.icon-music:before {
+  font-family: "linea-music-10" !important
+}
+
+.icon-software:before {
+  font-family: "linea-software-10" !important
+}
+
+.icon-weather:before {
+  font-family: "linea-weather-10" !important
+}

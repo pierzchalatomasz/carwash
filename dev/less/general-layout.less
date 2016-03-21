@@ -1,0 +1,174 @@
+/*
+** General Layout Styles
+*/
+
+.body-inner {
+  transition: .5s cubic-bezier(.42,.66,.14,1.24);
+}
+
+.site-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  background-color: #222;
+
+  .site-loader-wrapper {
+    display: table;
+    height: 100%;
+    width: 100%;
+  }
+
+  .site-loader-inner {
+    display: table-cell;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .loader {
+    display: inline-block;
+  }
+}
+
+.site-loader.loader-hidden {
+  opacity: 0;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.fullwidth-section {
+  background: #fff;
+  background-size: cover;
+  z-index: 2;
+  position: relative;
+
+  .divider {
+    height: 1px;
+    background: #e1e1e1;
+    margin: 5 * @baseline 0;
+  }
+}
+
+.section-inner {
+  padding: 70px 0;
+}
+
+.section-inner.no-padding-top {
+  padding-top: 0;
+}
+
+.section-inner.no-padding-bottom {
+  padding-bottom: 0;
+}
+
+.section-title-wrapper {
+  text-align: center;
+  margin-bottom: 2 * @baseline;
+
+  .section-title {
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 0;
+
+    span {
+      font-family: 'Syncopate';
+      border-top: 5px solid #333;
+      border-bottom: 5px solid #333;
+      padding: 13px 0;
+      text-transform: lowercase;
+    }
+  }
+
+  .section-subtitle {
+    text-align: center;
+    color: #777;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 5 * @baseline;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .section-title {
+    font-size: 2 * @baseline;
+    line-height: 2.5em;
+  }
+}
+
+.fullwidth-section.gray-section {
+  background: #f3f3f3;
+
+  .section-title-wrapper {
+    .divider {
+      background: #d1d1d1;
+    }
+  }
+}
+
+.image-section, .color-section {
+  color: #fff;
+
+  .section-title-wrapper {
+    .section-title {
+      span {
+        border-top: 5px solid #fff;
+        border-bottom: 5px solid #fff;
+        color: #fff;
+      }
+    }
+
+    .section-subtitle {
+      color: #ddd;
+    }
+  }
+}
+
+#map_canvas {
+  height: 400px;
+}
+
+#pricing.fullwidth-section {
+  background-image: url(../img/escheresque_ste.png);
+  background-repeat: repeat;
+  text-align: center;
+  background-size: initial;
+}
+
+#our-services.fullwidth-section {
+  background-image: url(../img/photo-1434210330765-8a00109fc773.jpg);
+
+  .section-inner {
+    background: rgba(255,255,255,0.6);
+  }
+}
+
+.welcome-section {
+  .section-title-wrapper {
+    .section-title {
+      margin-bottom: 52px;
+    }
+
+    .section-subtitle {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.nav-menu-opened {
+  transform: translate(-350px,0);
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.media-body {
+  width: auto;
+}
+
+#nav-menu {
+  opacity: 0;
+}

@@ -1,0 +1,54 @@
+/*
+** Helpers
+*/
+
+.color {
+  color: @color;
+}
+
+.txt-light {
+  font-weight: 300;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.ultra-bold {
+  font-weight: 900;
+}
+
+.easing {
+  transition: all 0.5s ease-in-out;
+}
+
+.easing-fast {
+  transition: all 0.3s ease-in-out;
+}
+
+.animation-infinite {
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+}
+
+.animation-duration {
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  -o-animation-duration: 4s;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.7);
+}
+
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
+}
